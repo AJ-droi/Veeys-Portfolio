@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+.links{
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.arrow{
+  width: 12%;
+}
+
+.arrows{
+  width: 5%;
+}
+
+
+
+@media screen and (max-width: 960px) {
+  .arrow {
+    width: 0%;
+  }
+
+  .line{
+    height:20vh;
+  }
+}
+
