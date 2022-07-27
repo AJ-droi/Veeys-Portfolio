@@ -1,7 +1,6 @@
-import React, { useContext } from 'react'
-import { Background, Section} from '../styles/Launch'
-import { ThemeProvider } from 'styled-components'
-import { AppContext, useGlobalContext, useUpdatedContext } from '../context'
+import React from 'react'
+import { Background} from '../styles/Launch'
+import { useGlobalContext, useUpdatedContext } from '../context'
 import { Flex, Image, Imagge } from '../styles/Home'
 import image from '../Images/Group 17.png'
 import light from "../Images/Light mode.png"
@@ -9,8 +8,8 @@ import design from "../Images/Design is life.png"
 
 
 const Launch = () => {
-  const {toggleTheme, toggleNav, setShowMenu} = useUpdatedContext();
-  const {themeStyles, darkTheme, showMenu} = useGlobalContext()
+  const {toggleTheme} = useUpdatedContext();
+  const {darkTheme} = useGlobalContext()
   return (
     <Background  place="center" display="grid" width="100%" heightSM="100vh" >
       <Flex>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Background} from '../styles/Launch';
 import { Flex, Text, HomeImg,Scroll, Image } from '../styles/Home';
 import arrow from "../Images/Vector (1).png";
@@ -8,7 +8,7 @@ import design from "../Images/Design is life.png"
 import { useGlobalContext } from '../context';
 import homeImg from "../Images/Rectangle 2.png"
 import darkHomeImg from "../Images/Rectangle 2 (1).png"
-import Launch from './Launch';
+
 
 const Home = () => {
   const {darkTheme} = useGlobalContext();
