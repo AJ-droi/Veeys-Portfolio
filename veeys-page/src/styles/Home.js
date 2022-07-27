@@ -68,7 +68,11 @@ export const Text = styled.div`
         font-family: 'Work Sans', serif;
         line-height: 1.5;
         padding-bottom: 3%;
-    } 
+    }
+    
+    @media screen and (max-width: 1024px){
+        padding: ${(props) => props.paddingSM};
+    }
 
     @media screen and (max-width: 960px){
         margin-top: 8%;
@@ -133,12 +137,53 @@ export const Image = styled.div`
     }
 
     @media screen and (max-width: 769px){
+        display: ${(props) =>props.displaySM};
         left: 35%;
         top: ${(props) => props.topSM};
         left: ${(props) => props.leftSM};
         img{
             height: 180px;
         }
+    }
+
+    @media screen and (max-width: 480px){
+        top: ${(props) => props.topSMM};
+        left: ${(props) => props.leftSMM};
+    }
+
+`
+
+export const Imagge = styled.div`
+    position: absolute;
+    top: ${(props) => props.top};
+    left: ${(props) => props.left};
+    display: ${(props) => props.display};
+    height:${(props) => props.heightSM};
+    img{
+        height: 60px;
+    }
+
+    @media screen and (max-width: 1200px){
+        top: ${(props) => props.topLG};
+        left: ${(props) => props.leftLG};
+    }
+
+    @media screen and (max-width: 960px){
+        top: ${(props) => props.topMD};
+        left: ${(props) => props.leftMD};
+        display: ${(props) => props.displaySM};
+        // img{
+        //     height: 200px;
+        // }
+    }
+
+    @media screen and (max-width: 769px){
+        left: 35%;
+        top: ${(props) => props.topSM};
+        left: ${(props) => props.leftSM};
+        // img{
+        //     height: 180px;
+        // }
     }
 
     @media screen and (max-width: 480px){

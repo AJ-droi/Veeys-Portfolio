@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Background} from '../styles/Launch';
 import { Flex, Text, HomeImg,Scroll, Image } from '../styles/Home';
 import arrow from "../Images/Vector (1).png";
@@ -8,11 +8,13 @@ import design from "../Images/Design is life.png"
 import { useGlobalContext } from '../context';
 import homeImg from "../Images/Rectangle 2.png"
 import darkHomeImg from "../Images/Rectangle 2 (1).png"
+import Launch from './Launch';
 
 const Home = () => {
   const {darkTheme} = useGlobalContext();
+
   return (
-      <Background  display='flex' place='start'>
+      <Background  display='flex' place='start' heightSM="auto">
           <Flex width='100%' justify='space-between' padding='15% 15% 0% 10%' paddingLG="15% 7% 0% 7%" paddingSM="15% 0% 0% 25%" paddingSMM="12% 0% 0% 15%" position="relative" fdSM="column" alignSM="center" >
             <Text>
               <h4>Hi, I am Victoria </h4>

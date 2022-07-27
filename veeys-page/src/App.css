@@ -29,5 +29,9 @@
   .line{
     height:20vh;
   }
+
+  .display{
+    display: "none"
+  }
 }
 

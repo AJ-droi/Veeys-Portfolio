@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 
 export const Background = styled.div `
-    width: 100%;
     height: 100vh;
     place-items: ${(props) => props.place};
     display: ${(props) => props.display};
@@ -11,6 +10,7 @@ export const Background = styled.div `
     overflow: hidden;
     h1{
         font-size: 8rem;
+        margin-bottom: 10%;
     }
 
     @media screen and (max-width: 1024px){
@@ -18,7 +18,7 @@ export const Background = styled.div `
     }
 
     @media screen and (max-width: 960px){
-        height: auto;
+        height:${(props) => props.heightSM};
         width: ${(props) => props.widthSM};
         
     }
