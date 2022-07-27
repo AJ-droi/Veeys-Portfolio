@@ -135,6 +135,11 @@ export const ImgContainer = styled.div`
     }
 
     @media screen and (max-width:600px){
-        margin-left: 60%
+        margin-left: 60%;
+        
+    }
+
+    @media screen and (max-width:480px){
+        margin-top: 0%;
     }
 `

@@ -222,6 +222,13 @@ export const HomeImg = styled.div`
         }
     }
 
+    @media screen and (max-width:480px){
+        img{
+            height: 50vh;
+            margin-left: -10%;
+        }
+    }
+
 `
 
 export const Scroll = styled.h6`

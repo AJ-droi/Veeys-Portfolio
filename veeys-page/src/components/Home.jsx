@@ -14,8 +14,8 @@ const Home = () => {
   const {darkTheme} = useGlobalContext();
 
   return (
-      <Background  display='flex' place='start' heightSM="auto">
-          <Flex width='100%' justify='space-between' padding='15% 15% 0% 10%' paddingLG="15% 7% 0% 7%" paddingSM="15% 0% 0% 25%" paddingSMM="12% 0% 0% 15%" position="relative" fdSM="column" alignSM="center" >
+      <Background  display='flex' place='start' heightSM="120vh">
+          <Flex width='100%' justify='space-between' padding='15% 15% 0% 10%' paddingLG="15% 7% 0% 7%" paddingSM="15% 0% 0% 25%" paddingSMM="0% 0% 0% 15%" position="relative" fdSM="column" alignSM="start" >
             <Text>
               <h4>Hi, I am Victoria </h4>
               <Image top="28%" left="43%" topLG="18%" leftLG="48%" topSM="12%" leftSM="55%" topSMM="14%" leftSMM="37%"> <img src={design} alt="" /> </Image>
@@ -34,7 +34,7 @@ const Home = () => {
               <img src={girl} alt='' />
             </HomeImg>
           </Flex>
-          <Scroll>Scroll<span><img src={darkTheme ? darkArrow : arrow} alt="" className='arrow'/></span> </Scroll>
+          {/* <Scroll>Scroll<span><img src={darkTheme ? darkArrow : arrow} alt="" className='arrow'/></span> </Scroll> */}
       </Background>
   )
 }

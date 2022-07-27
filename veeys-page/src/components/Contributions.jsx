@@ -10,7 +10,7 @@ const Contributions = () => {
   const{themeStyles, boxValue, darkTheme} = useGlobalContext();
   return (
        <Background style={themeStyles} width="110%"   place='start'>
-        <Grid margin="11% 0% 0% 8%" marginLG="15% 0% 0% 12%" marginSM="15% 0% 0% 3%" marginSMM="28% 0% 0% 12%" >
+        <Grid margin="11% 0% 0% 8%" marginLG="15% 0% 0% 12%" marginSM="15% 0% 0% 3%" marginSMM="35% 0% 0% 12%" >
           <H2 marginSMM="0% 0% 0% 2%" color={`${darkTheme ? `#fff` : `#161313`}`}>Works</H2>
           <Paragraph font="1.5rem" margin="-3% 2% 0% 1%" marginSMM="-5% 0% 0% 3%">Selected Projects</Paragraph>
 

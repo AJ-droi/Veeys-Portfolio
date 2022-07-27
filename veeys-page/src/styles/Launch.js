@@ -60,8 +60,15 @@ export const Nav = styled.header`
     }
 
     @media screen and (max-width: 800px){
+        background-color: ${(props) => props.bc};
+        height: auto;
         width: 100%;
         padding: 0%;
+    }
+    
+    @media screen and (max-width: 480px){
+        background-color: ${(props) => props.bc};
+        height: auto;
     }
     
 `
@@ -79,6 +86,7 @@ export const NavLinks = styled.div`
        width: 100%; 
        height: 30vh;
     }
+
 `
 
 export const Ul = styled.ul`
