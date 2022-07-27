@@ -4,10 +4,10 @@ import { Background } from "../styles/Launch";
 import { Grid, Box, Paragraph, H2 } from "../styles/Contributions";
 import arrow from "../Images/Vector (1).png";
 import darkArrow from "../Images/Vector (2).png";
-import { useGlobalContext, useUpdatedContext } from "../context";
+import { useGlobalContext } from "../context";
 
 const Contributions = () => {
-  const{themeStyles, width, boxValue, darkTheme} = useGlobalContext();
+  const{themeStyles, boxValue, darkTheme} = useGlobalContext();
   return (
        <Background style={themeStyles} width="110%"   place='start'>
         <Grid margin="11% 0% 0% 8%" marginLG="15% 0% 0% 12%" marginSM="15% 0% 0% 3%" marginSMM="28% 0% 0% 12%" >

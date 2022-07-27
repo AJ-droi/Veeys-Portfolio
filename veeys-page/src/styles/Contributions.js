@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import imgBackground from '../Images/Rectangle 2133.png'
+
 
 
 export const Grid = styled.div`

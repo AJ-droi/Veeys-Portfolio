@@ -2,7 +2,6 @@ import React from 'react'
 import { Flex } from "../styles/Home";
 import { Background } from "../styles/Launch";
 import { Grid, Box, Paragraph, H2 } from "../styles/Contributions";
-import arrow from "../Images/Vector (1).png";
 import images from "../Images/20220523_122808 1.png";
 import { useGlobalContext } from '../context';
 const Community = () => {

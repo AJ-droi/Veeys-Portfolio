@@ -3,7 +3,6 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Contributions from './components/Contributions';
-import Veey from './Veey';
 import './App.css';
 import Volunteer from "./components/Volunteer";
 import Community from "./components/Community";

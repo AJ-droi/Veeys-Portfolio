@@ -6,7 +6,6 @@ import light from "../Images/Light mode.png"
 import line from "../Images/Line 17.png"
 import line1 from "../Images/Line 17 (1).png"
 import { useGlobalContext, useUpdatedContext } from '../context'
-import { Flex } from '../styles/Home';
 
 
 

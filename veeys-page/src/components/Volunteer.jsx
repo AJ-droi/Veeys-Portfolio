@@ -6,8 +6,7 @@ import { TimeLine } from '../styles/Volunteer'
 import chevron from '../Images/Vector.png'
 import chevron1 from '../Images/Vector1.png'
 import design from "../Images/Design is life.png"
-import { useContext } from 'react'
-import { AppContext, useGlobalContext, useUpdatedContext } from '../context'
+import { useGlobalContext, useUpdatedContext } from '../context'
 
 
 const Volunteer = () => {
