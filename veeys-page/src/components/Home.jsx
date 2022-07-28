@@ -14,17 +14,17 @@ const Home = () => {
   const {darkTheme} = useGlobalContext();
 
   return (
-      <Background  display='flex' place='start' heightSM="120vh">
-          <Flex width='100%' justify='space-between' padding='15% 15% 0% 10%' paddingLG="15% 7% 0% 7%" paddingSM="15% 0% 0% 25%" paddingSMM="0% 0% 0% 15%" position="relative" fdSM="column" alignSM="start" >
+      <Background  display='flex' place='center' heightSM="120vh">
+          <Flex width='100%' justify='space-between' padding='10% 10% 0% 10%' paddingLG="15% 7% 0% 7%" paddingSM="15% 0% 0% 25%" paddingSMM="0% 0% 0% 15%" position="relative" fdSM="column" alignSM="start" >
             <Text>
               <h4>Hi, I am Victoria </h4>
-              <Image top="28%" left="43%" topLG="18%" leftLG="48%" topSM="12%" leftSM="55%" topSMM="14%" leftSMM="37%"> <img src={design} alt="" /> </Image>
+              <Image topXL="44%" leftXL="43%" top="20%" left="43%" topLG="18%" leftLG="48%" topSM="12%" leftSM="55%" topSMM="7%" leftSMM="37%"> <img src={design} alt="" /> </Image>
               <p>
                 I am a Product Designer (UI, UX).  I am passionate about <br />
                 creating user-centered designs, gathering and translating<br />
                 user data into design decisions and products.
               </p>
-              <Flex justify='space-between' width="50%" position="relative" widthLG="60%" widthSM="70%" widthSMM="80%" >
+              <Flex justify='space-between' widthXL="70%" width="60%" position="relative" widthLG="60%" widthSM="70%" widthSMM="80%" >
                 <h5>Resume <span><img src={darkTheme ? darkArrow : arrow} alt="" className='arrow' /></span></h5>
                 <h5>Linkedin <span><img src={darkTheme ? darkArrow : arrow} alt="" className='arrow' /></span></h5>
                 <h5>Behance <span><img src={darkTheme ? darkArrow : arrow} alt="" className='arrow' /></span></h5>

@@ -18,6 +18,8 @@ const AppProvider = ({children}) => {
     const themeStyles = {
       backgroundColor: darkTheme ? `#010F0A` : `transparent`,
       backgroundImage: darkTheme ? `url(${darkImg})` : `url(${img})`,
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "100% 100%",
       color: darkTheme ? `#fff` : `#000`,
     }
 

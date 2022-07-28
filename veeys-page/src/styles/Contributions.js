@@ -9,6 +9,11 @@ export const Grid = styled.div`
     margin: ${(props) => props.margin};
     padding: ${(props) => props.padding};
 
+    @media screen and (min-width: 1500px){
+        margin: ${(props) => props.marginXL};
+        overflow-x: scroll;
+    }
+
     @media screen and (max-width: 1200px){
         margin: ${(props) => props.marginLG};
         overflow-x: scroll;
@@ -55,6 +60,17 @@ export const Box = styled.div`
         font-family: 'Work Sans', sans-serif;
     }
 
+    @media screen and (min-width: 1500px){
+        height: ${(props) => props.heightXL};
+        h4{
+            font-size: 3rem;
+        }
+
+        span{
+            font-size: 1.3rem;
+        }
+    }
+
     @media screen and (max-width: 1200px){
         height: ${(props) => props.heightLG};
     }
@@ -84,6 +100,11 @@ export const Paragraph = styled.p`
     display: ${(props) => props.display};
     img{
         width: 2%;
+    }
+
+    @media screen and (min-width: 1500px){
+        font-size: ${(props) => props.fontXL};
+        margin: ${(props) => props.marginXL};
     }
 
     @media screen and (max-width: 1200px){

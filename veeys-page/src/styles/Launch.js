@@ -13,6 +13,10 @@ export const Background = styled.div `
         margin-bottom: 10%;
     }
 
+    @media screen and (min-width 1500px){
+        place-items:center;
+    }
+
     @media screen and (max-width: 1024px){
         place-items:center;
     }

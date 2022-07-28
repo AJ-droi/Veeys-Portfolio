@@ -20,11 +20,11 @@ function App() {
     setLoading(true);
     setTimeout(() =>{
       setLoading(false);
-    }, 5000)
+    }, 3000)
   },[])
   return (
-    <div style={themeStyles}>
-      {loading ? <Launch /> : <div style={themeStyles}>
+    <div>
+      {loading ? <div style={themeStyles}> <Launch /> </div>  : <div style={themeStyles}>
         <BrowserRouter>
           <Navbar />
           <Routes>

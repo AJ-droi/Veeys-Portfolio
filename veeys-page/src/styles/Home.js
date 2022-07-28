@@ -14,6 +14,15 @@ export const Flex =styled.div`
         margin-top: 5%;
     }
 
+    @media screen and (min-width: 1500px){
+        width: ${(props) => props.widthXL};
+        padding-right: ${(props) => props.prXL};
+        justify-content: space-between;
+        h5{
+            font-size: 1.5rem;
+        }
+    }
+
     @media screen and (max-width: 1200px){
         width: ${(props) => props.widthLG};
         padding: ${(props) => props.paddingLG};
@@ -69,9 +78,22 @@ export const Text = styled.div`
         line-height: 1.5;
         padding-bottom: 3%;
     }
-    
+
+    @media screen and (min-width: 1500px){
+        align-self: center;
+        padding: ${(props) => props.paddingXL};
+        h4{
+            font-size: 7rem;
+        }
+
+        p{
+            font-size:2rem;
+        }
+    }
+
     @media screen and (max-width: 1024px){
         padding: ${(props) => props.paddingSM};
+        
     }
 
     @media screen and (max-width: 960px){
@@ -120,6 +142,11 @@ export const Image = styled.div`
     height:${(props) => props.heightSM};
     img{
         height: 200px;
+    }
+
+    @media screen and (min-width: 1500px){
+        top: ${(props) => props.topXL};
+        left: ${(props) => props.leftXL};
     }
 
     @media screen and (max-width: 1200px){
@@ -197,17 +224,21 @@ export const HomeImg = styled.div`
     display:grid;
     place-items: center;
     background-image: ${(props) => props.bc};
-    background-size: 100% 100%;
-    width: 25%;
-    height: 45vh;
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
     margin-top:5%;
     img{
-        height: 50vh;
+        height: 40vh;
         margin-top: 8%;
     }
 
     @media screen and (max-width:1024px){
+        background-size: 100% 100%;
         width: 35%;
+
+        img{
+            margin-left: -20%;
+        }
         
     }
 
@@ -290,6 +321,10 @@ export const Form = styled.form`
         padding: 0.5rem 2rem;
         background-color: transparent;
     };
+
+    @media screen and (min-width:1500px){
+        width: 50%;
+    }
 
     @media screen and (max-width:1024px){
         h5{

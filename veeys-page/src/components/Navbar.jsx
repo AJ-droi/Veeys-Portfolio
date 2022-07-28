@@ -19,17 +19,17 @@ const Navbar = () => {
 
             <NavLinks  display={`${showMenu ? "flex" :"none"}`} >
                 <Ul onClick={() => setShowMenu(false)}>
-                    <li ><Link to="/" style={themeStyles} className='links'>Home </Link></li>
-                    <li><Link to="contributions" style={themeStyles} className='links'>Contributions</Link></li>
-                    <li><Link to="volunteer" style={themeStyles} className='links'>Volunteer</Link></li>
-                    <li><Link to="community" style={themeStyles} className='links'>Community</Link></li>
-                    <li><Link to="contact" style={themeStyles} className='links'>Contact Me</Link></li>
-                    <button style={border}><Link to=" " style={themeStyles} className='links'>My Resume</Link></button>
+                    <li ><Link to="/" style={darkTheme ? {color:"#fff"} :{color:"#000"}} className='links'>Home </Link></li>
+                    <li><Link to="contributions" style={darkTheme ? {color:"#fff"} :{color:"#000"}} className='links'>Contributions</Link></li>
+                    <li><Link to="volunteer" style={darkTheme ? {color:"#fff"} :{color:"#000"}} className='links'>Volunteer</Link></li>
+                    <li><Link to="community"style={darkTheme ? {color:"#fff"} :{color:"#000"}} className='links'>Community</Link></li>
+                    <li><Link to="contact"style={darkTheme ? {color:"#fff"} :{color:"#000"}} className='links'>Contact Me</Link></li>
+                    <button style={darkTheme ? {color:"#000", borderColor:"#fff"} :{color:"#fff", borderColor:"#000"}} ><Link to=" " style={darkTheme ? {color:"#fff"} :{color:"#000"}} className='links'>My Resume</Link></button>
                 </Ul>
             </NavLinks>
             <Button onClick={toggleNav} style={border} color={darkTheme ? `#fff` : `#000`} visible={`${showMenu ? `none` : `visible`}`} marginMD="0% 5% 0% 0%">{showMenu ? "Close" : "Menu"}</Button>
             <img src={darkTheme ?line1 : line} alt="" class="line" />
-            <Section style={themeStyles}  position={`${ showMenu ? "absolute" : "relative"}`} paddingSM={showMenu ? `0% 0% 0% 28%` : `0% 7% 0% 0%`}>
+            <Section style={darkTheme ? {color:"#fff"} :{color:"#000"}}   position={`${ showMenu ? "absolute" : "relative"}`} paddingSM={showMenu ? `0% 0% 0% 28%` : `0% 7% 0% 0%`}>
                     <a href=" " onClick={toggleTheme}>  <img src={`${darkTheme ? light : image}`} alt=" " height="50vh"/> </a>
             </Section>
         </Nav>
