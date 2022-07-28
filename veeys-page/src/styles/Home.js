@@ -58,6 +58,7 @@ export const Flex =styled.div`
 export const Text = styled.div`
     margin: ${(props) => props.margin};
     padding: ${(props) => props.padding};
+    align-self: center;
 
     h3{
         font-size: 3.0rem;
@@ -224,9 +225,10 @@ export const HomeImg = styled.div`
     display:grid;
     place-items: center;
     background-image: ${(props) => props.bc};
-    background-size: 90% 100%;
+    background-size: 90% 80%;
     background-repeat: no-repeat;
     margin-top:5%;
+    height: 50vh;
     img{
         height: 40vh;
         margin-top: 8%;

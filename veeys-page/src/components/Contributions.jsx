@@ -10,7 +10,7 @@ const Contributions = () => {
   const{themeStyles, boxValue, darkTheme} = useGlobalContext();
   return (
        <Background style={themeStyles}  place='center'>
-        <Grid marginXL="20% 0% 0% 8%" margin="11% 0% 0% 8%" marginLG="15% 0% 0% 12%" marginSM="15% 0% 0% 3%" marginSMM="35% 0% 0% 12%" >
+        <Grid marginXL="20% 0% 0% 8%" margin="5% 0% 0% 8%" marginLG="15% 0% 0% 12%" marginSM="15% 0% 0% 3%" marginSMM="35% 0% 0% 12%" >
           <H2 marginSMM="0% 0% 0% 2%" color={`${darkTheme ? `#fff` : `#161313`}`}>Works</H2>
           <Paragraph font="1.5rem" marginXL="-1% 0% 0% 0%" margin="-3% 2% 0% 1%" marginSMM="-5% 0% 0% 3%">Selected Projects</Paragraph>
 
@@ -18,7 +18,7 @@ const Contributions = () => {
             {boxValue.map((box, idx) => {
               const {id } = box;
               return (
-                <Box key={id}  border="4px solid #00754B" heightXL="40vh" height="50vh" width="32%" widthLG="35%" widthSM="30%" heightLG="45vh" heightSM="57vh" heightSMM="50vh" >
+                <Box key={id}  border="4px solid #00754B" heightXL="40vh" height="auto" width="32%" widthLG="35%" widthSM="30%" heightLG="45vh" heightSM="57vh" heightSMM="50vh" >
                   <h5>Oxigin <br /> App</h5>
                   <Paragraph fontXL="1.5rem" font="0.6rem">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.

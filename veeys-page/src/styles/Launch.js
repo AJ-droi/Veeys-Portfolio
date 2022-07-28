@@ -38,6 +38,7 @@ export const Nav = styled.header`
     padding: 0% 0% 0% 10%;
     box-sizing: border-box;
     border-bottom: ${(props) => props.bb};
+    
 
     h3{
         font-family: 'Vollkorn', serif; 

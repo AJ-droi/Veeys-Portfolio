@@ -9,10 +9,10 @@ const Community = () => {
   return (
     <div style={width}>
       <Background style={themeStyles} display="grid" place='center'>
-        <Grid  margin="7% 0% 0% 8%" marginLG="15% 0% 0% 12%" marginSM="15% 0% 0% 3%" marginSMM="35% 0% 0% 12%">
+        <Grid  margin="0% 0% 0% 8%" marginLG="15% 0% 0% 12%" marginSM="15% 0% 0% 3%" marginSMM="35% 0% 0% 12%">
           <H2 marginSMM="0% 0% 0% 3%">Community</H2>
           <Flex  width="90%"widthLG="120%" widthSM="150%" widthSMM="300%" heightSM="80vh" marginSM="3% 0%" paddingLG="0% 15% 0% 0%">
-            <Box heightXL="30vh" margin="0%" border={`${darkTheme ? "2px solid #fff" : "2px solid #000"}`} height="50vh" width="32%" widthLG="35%" widthSM="30%" heightSM="55vh" heightSMM="50vh"  >
+            <Box heightXL="30vh" margin="0%" border={`${darkTheme ? "2px solid #fff" : "2px solid #000"}`} height="40vh" width="32%" widthLG="35%" widthSM="30%" heightSM="55vh" heightSMM="50vh"  >
               <img src={images} alt="" width="50px" height="50px"  />
               <h4 style={darkTheme ? {color:`#fff`} : themeStyles}>
                 FOF UYO<br />
@@ -22,7 +22,7 @@ const Community = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing <br /> elit. Metus aliquam posuere ut.
               </Paragraph>
             </Box>
-            <Box heightXL="30vh" margin="0% 0.5%" border={`${darkTheme ? "2px solid #fff" : "2px solid #000"}`}  height="50vh" width="32%" widthLG="35%" widthSM="30%" heightSM="55vh" heightSMM="50vh">
+            <Box heightXL="30vh" margin="0% 0.5%" border={`${darkTheme ? "2px solid #fff" : "2px solid #000"}`}  height="40vh" width="32%" widthLG="35%" widthSM="30%" heightSM="55vh" heightSMM="50vh">
               <img src={images} alt="" width="50px" height="50px" />   
               <h4 style={darkTheme ? {color:`#fff`} : themeStyles}>
                 FOF UYO<br />
@@ -32,7 +32,7 @@ const Community = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing <br /> elit. Metus aliquam posuere ut.
               </Paragraph>
             </Box>
-            <Box heightXL="30vh" margin="0%" border={`${darkTheme ? "2px solid #fff" : "2px solid #000"}`}  height="50vh" width="32%" widthLG="35%" widthSM="30%" heightSM="55vh" heightSMM="50vh">
+            <Box heightXL="30vh" margin="0%" border={`${darkTheme ? "2px solid #fff" : "2px solid #000"}`}  height="40vh" width="32%" widthLG="35%" widthSM="30%" heightSM="55vh" heightSMM="50vh">
               <img src={images} alt="" width="50px" height="50px" />
               <h4 style={darkTheme ? {color:`#fff`} : themeStyles}>
                 FOF UYO<br />

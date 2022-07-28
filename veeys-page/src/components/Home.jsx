@@ -18,7 +18,7 @@ const Home = () => {
           <Flex width='100%' justify='space-between' padding='10% 10% 0% 10%' paddingLG="15% 7% 0% 7%" paddingSM="15% 0% 0% 25%" paddingSMM="0% 0% 0% 15%" position="relative" fdSM="column" alignSM="start" >
             <Text>
               <h4>Hi, I am Victoria </h4>
-              <Image topXL="44%" leftXL="43%" top="20%" left="43%" topLG="18%" leftLG="48%" topSM="12%" leftSM="55%" topSMM="7%" leftSMM="37%"> <img src={design} alt="" /> </Image>
+              <Image topXL="44%" leftXL="43%" top="30%" left="43%" topLG="18%" leftLG="48%" topSM="12%" leftSM="55%" topSMM="7%" leftSMM="37%"> <img src={design} alt="" /> </Image>
               <p>
                 I am a Product Designer (UI, UX).  I am passionate about <br />
                 creating user-centered designs, gathering and translating<br />

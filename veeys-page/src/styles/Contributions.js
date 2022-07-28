@@ -6,6 +6,8 @@ export const Grid = styled.div`
     display: grid;
     position: relative;
     width: 100%;
+    height: 100vh;
+    align-content: center;
     margin: ${(props) => props.margin};
     padding: ${(props) => props.padding};
 
