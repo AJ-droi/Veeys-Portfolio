@@ -145,7 +145,7 @@ export const Section = styled.div`
     @media screen and (max-width: 600px){
         padding: ${(props) => props.paddingSM};
         margin: ${(props) => props.marginSM};
-        width: 55%;
+        width: 45%;
     }
 
 `
@@ -167,5 +167,6 @@ export const Button = styled.button`
     @media screen and (max-width: 600px){
         width: ${(props) => props.widthSM};
         margin: ${(props) => props.marginSM};
+        height: 8vh;
     }
 `

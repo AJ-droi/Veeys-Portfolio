@@ -14,8 +14,8 @@ const Volunteer = () => {
     const {toggleContent} = useUpdatedContext();
   return (
     <Background display="grid" place='start'>
-        <Grid margin="11% 0% 0% 0%" marginLG="3% 0% 0% 0%" marginSM="5% 0% 0% 3%" marginSMM="-5% 0% 0% 3%">
-            <Image display="none" displaySM="block" top="10%" left="75%" topSM="22%" leftSM="70%"> <img src={design} alt="" heightSM="200px"/> </Image>
+        <Grid margin="0% 0% 0% 0%" marginLG="3% 0% 0% 0%" marginSM="5% 0% 0% 3%" marginSMM="-5% 0% 0% 3%">
+            <Image display="none" displaySM="block" top="10%" left="75%" topSM="32%" leftSM="70%"> <img src={design} alt="" heightSM="200px"/> </Image>
             <Flex padding="0% 10%" paddingLG="0% 7%" marginMD="10% 0% 0% 0%" marginSM="15% 0% 0% 0%" marginSMM="40% 0% 0% 0%">
                 <div>
                     <H2>Volunteer</H2>
@@ -27,21 +27,21 @@ const Volunteer = () => {
                 <Paragraph display="none" displaySM="block" font="0.8rem" ta="right"  width="100%" margin="15% 1% 0% 1%" marginSM="17% 1% 0% 1%">Lorem ipsum dolor sit amet.</Paragraph>
             </Flex>
             <TimeLine>
-                <Grid heightSMM="auto">
+                <div heightSMM="auto">
                     <Flex width='100%'  marginSM="0% 0% 5% 0%" justify="space-between" borderBottom={`${darkTheme ? "3px solid #fff" : "3px solid #0000004D" }`} margin="3% 0% 0% 0%">
                         <h3>2022-Present</h3>
                         <span><img onClick={toggleContent} src={content ? chevron1 : chevron} alt="" /></span>
                     </Flex>
                     <Paragraph display={`${content ? `grid` : `none`}`}  fw="600">Crowd control unit</Paragraph>
                     <Paragraph display={`${content ? `grid` : `none`}`} fw="600">Untitled design conference 2022.May 7th, 2021.See Pictures.</Paragraph>
-                </Grid>
+                </div>
                
-                <Grid heightSMM="auto">
+                <div heightSMM="auto">
                     <Flex width='100%' justify="space-between" borderBottom={`${darkTheme ? "3px solid #fff" : "3px solid #0000004D" }`}>
                         <h3>2021</h3>
                         <span><img src={content ? chevron1 : chevron} alt="" /></span>
                     </Flex>
-                </Grid>
+                </div>
             </TimeLine>
 
         </Grid>

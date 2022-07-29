@@ -29,7 +29,7 @@ const Navbar = () => {
             </NavLinks>
             <Button onClick={toggleNav} style={border} color={darkTheme ? `#fff` : `#000`} visible={`${showMenu ? `none` : `visible`}`} marginMD="0% 5% 0% 0%">{showMenu ? "Close" : "Menu"}</Button>
             <img src={darkTheme ?line1 : line} alt="" class="line" />
-            <Section style={darkTheme ? {color:"#fff"} :{color:"#000"}}   position={`${ showMenu ? "absolute" : "relative"}`} paddingSM={showMenu ? `0% 0% 0% 28%` : `0% 7% 0% 0%`}>
+            <Section style={darkTheme ? {color:"#fff"} :{color:"#000"}}   position={`${ showMenu ? "absolute" : "relative"}`} paddingSM={showMenu ? `0% 0% 0% 28%` : `0% 0% 0% 0%`}>
                     <a href=" " onClick={toggleTheme}>  <img src={`${darkTheme ? light : image}`} alt=" " height="50vh"/> </a>
             </Section>
         </Nav>
